@@ -16,7 +16,8 @@ cd vcpkg
 ## 配置vcpkg工具链
 ### 通过clion GUI配置
 在**Clion/Preferences/Build,Execution,Deployment/Cmake/CMake options**中填入以下信息：
-`-DCMAKE_TOOLCHAIN_FILE=/Users/hualongzhang/vcpkg/scripts/buildsystems/vcpkg.cmake`，如图：
+`-DCMAKE_TOOLCHAIN_FILE=/Users/hualongzhang/vcpkg/scripts/buildsystems/vcpkg.cmake`，
+如图：
 ![image.png](https://upload-images.jianshu.io/upload_images/1489066-61331f657c7ea447.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ### 通过cmakelists.txt配置
