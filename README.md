@@ -25,7 +25,7 @@ cd vcpkg
 set(CMAKE_TOOLCHAIN_FILE "/Users/hualongzhang/vcpkg/scripts/buildsystems/vcpkg.cmake")
 project(vcpkg_catch_demo)
 ```
-$\color{red}{注意：}$ 设置CMAKE_TOOLCHAIN_FILE要在project()命令之前
+**注意：** 设置CMAKE_TOOLCHAIN_FILE要在project()命令之前
 
 ## 配置catch2
 在项目的cmakelists.txt中加入以下内容
@@ -33,7 +33,7 @@ $\color{red}{注意：}$ 设置CMAKE_TOOLCHAIN_FILE要在project()命令之前
 find_package(Catch2 CONFIG REQUIRED)
 target_link_libraries(vcpkg_catch_demo PRIVATE Catch2::Catch2)
 ```
-$\color{red}{注意：}$ 
+**注意：**
 * 要把以上两句放在`add_executable`后面，否则会出现以下错误：
 ```
 CMake Error at CMakeLists.txt:8 (target_link_libraries):
@@ -54,7 +54,7 @@ CMake Error at CMakeLists.txt:6 (find_package):
   provides a separate development package or SDK, be sure it has been
   installed.
 ```
-# 通过cmakelists.txt配置的完整脚本**
+# 通过cmakelists.txt配置的完整脚本
 ```
 cmake_minimum_required(VERSION 3.17)
 set(CMAKE_TOOLCHAIN_FILE "/Users/hualongzhang/vcpkg/scripts/buildsystems/vcpkg.cmake")
